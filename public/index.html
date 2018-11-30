@@ -1,0 +1,34 @@
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+
+<div class="container">
+        <h1>Shop The World</h1>
+        <div class="box">
+	<a class="button" href="#popup1" onclick="popup()">Customize & Add to cart</a>
+        </div>
+</div>
+
+<div id="result">
+  <h2>Total value in the cart is <span id="total"></span></h2>
+</div>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Select Your Customization</h2>
+		<a class="close" href="#" onclick="clrscr()">&times;</a>
+		<div class="content">
+      <table>
+        <tr><td>Category 1</td><td>
+          <input type="radio" name="c1" value="0"/>&nbsp;$0&nbsp;
+          <input type="radio" name="c1" value="5"/>&nbsp;$5&nbsp;
+          <input type="radio" name="c1" value="10"/>&nbsp;$10&nbsp;
+          </td></tr>
+        <tr><td>Category 2</td><td>
+          <input type="radio" name="c2" value="0"/>&nbsp;$0&nbsp;
+          <input type="radio" name="c2" value="25"/>&nbsp;$25&nbsp;
+          </td></tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td colspan="2"><div class="center"><input class="button" type="submit" value="Add to cart" onclick="calc()"/></div></td></tr>
+		</div>
+	</div>
+</div>
